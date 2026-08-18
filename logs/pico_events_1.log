@@ -1,0 +1,480 @@
+2026-08-18 17:47:51,374 - INFO - Listening on COM4 at 115200 baud...
+2026-08-18 17:47:53,356 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:47:56,955 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:48:00,664 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:48:02,650 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:48:10,057 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:48:13,353 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:48:17,048 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:48:21,047 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:48:28,453 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:48:31,749 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:48:35,444 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:48:39,444 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:48:46,850 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:48:50,146 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:48:53,857 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:48:57,856 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:49:05,247 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:49:08,559 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:49:12,254 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:49:16,253 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:49:23,660 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:49:26,955 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:49:30,651 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:49:34,650 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:49:42,057 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:49:45,352 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:49:49,048 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:49:53,047 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:50:00,453 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:50:03,749 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:50:07,460 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:50:11,459 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:50:18,850 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:50:22,146 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:50:25,857 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:50:29,856 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:52:25,323 - INFO - Listening on COM4 at 115200 baud...
+2026-08-18 17:52:27,657 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:52:30,952 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:52:34,664 - WARNING - Incomplete frame received, skipping
+2026-08-18 17:55:18,480 - INFO - Listening on COM4 at 115200 baud...
+2026-08-18 17:55:20,254 - WARNING - Incomplete frame: length=22, body_got=24/27, crc_got=2/2
+2026-08-18 17:55:24,276 - WARNING - Incomplete frame: length=20, body_got=22/25, crc_got=2/2
+2026-08-18 17:55:31,660 - WARNING - Incomplete frame: length=20, body_got=22/25, crc_got=2/2
+2026-08-18 17:55:34,955 - WARNING - Incomplete frame: length=20, body_got=22/25, crc_got=2/2
+2026-08-18 17:55:38,666 - WARNING - Incomplete frame: length=22, body_got=24/27, crc_got=2/2
+2026-08-18 17:55:42,666 - WARNING - Incomplete frame: length=20, body_got=22/25, crc_got=2/2
+2026-08-18 17:55:50,056 - WARNING - Incomplete frame: length=20, body_got=22/25, crc_got=2/2
+2026-08-18 17:55:53,368 - WARNING - Incomplete frame: length=20, body_got=22/25, crc_got=2/2
+2026-08-18 17:55:57,063 - WARNING - Incomplete frame: length=22, body_got=24/27, crc_got=2/2
+2026-08-18 17:56:01,063 - WARNING - Incomplete frame: length=20, body_got=22/25, crc_got=2/2
+2026-08-18 17:56:08,469 - WARNING - Incomplete frame: length=20, body_got=22/25, crc_got=2/2
+2026-08-18 17:56:11,765 - WARNING - Incomplete frame: length=20, body_got=22/25, crc_got=2/2
+2026-08-18 17:56:15,460 - WARNING - Incomplete frame: length=22, body_got=24/27, crc_got=2/2
+2026-08-18 17:56:19,459 - WARNING - Incomplete frame: length=20, body_got=22/25, crc_got=2/2
+2026-08-18 17:56:26,866 - WARNING - Incomplete frame: length=20, body_got=22/25, crc_got=2/2
+2026-08-18 17:56:30,162 - WARNING - Incomplete frame: length=20, body_got=22/25, crc_got=2/2
+2026-08-18 17:56:33,857 - WARNING - Incomplete frame: length=22, body_got=24/27, crc_got=2/2
+2026-08-18 17:56:37,856 - WARNING - Incomplete frame: length=20, body_got=22/25, crc_got=2/2
+2026-08-18 17:56:45,263 - WARNING - Incomplete frame: length=20, body_got=22/25, crc_got=2/2
+2026-08-18 17:56:46,959 - WARNING - Incomplete frame: length=155, body_got=20/160, crc_got=2/2
+2026-08-18 17:56:50,558 - WARNING - Incomplete frame: length=37, body_got=39/42, crc_got=2/2
+2026-08-18 17:56:54,273 - WARNING - Incomplete frame: length=21, body_got=23/26, crc_got=0/2
+2026-08-18 17:56:56,269 - WARNING - Incomplete frame: length=20, body_got=22/25, crc_got=2/2
+2026-08-18 17:57:03,660 - WARNING - Incomplete frame: length=20, body_got=22/25, crc_got=2/2
+2026-08-18 17:57:06,971 - WARNING - Incomplete frame: length=20, body_got=22/25, crc_got=2/2
+2026-08-18 17:57:10,667 - WARNING - Incomplete frame: length=22, body_got=24/27, crc_got=2/2
+2026-08-18 17:58:45,859 - INFO - Listening on COM4 at 115200 baud...
+2026-08-18 18:00:15,123 - INFO - Listening on COM4 at 115200 baud...
+2026-08-18 18:00:16,866 - INFO - [pico  2348622ms] INFO  Allocator reset
+2026-08-18 18:00:18,674 - WARNING - [pico  2350422ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:00:24,369 - INFO - [pico  2356123ms] INFO  Alloc 512 bytes
+2026-08-18 18:00:26,065 - INFO - [pico  2357823ms] INFO  Alloc 512 bytes
+2026-08-18 18:00:27,776 - INFO - [pico  2359523ms] INFO  Alloc 512 bytes
+2026-08-18 18:00:29,376 - ERROR - [pico  2361123ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:00:31,376 - WARNING - [pico  2363123ms] WARN  Rewind successful
+2026-08-18 18:00:33,072 - INFO - [pico  2364823ms] INFO  Alloc 1024 bytes
+2026-08-18 18:00:35,279 - INFO - [pico  2367023ms] INFO  Allocator reset
+2026-08-18 18:00:37,072 - WARNING - [pico  2368823ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:00:42,766 - INFO - [pico  2374524ms] INFO  Alloc 512 bytes
+2026-08-18 18:00:44,477 - INFO - [pico  2376224ms] INFO  Alloc 512 bytes
+2026-08-18 18:00:46,173 - INFO - [pico  2377924ms] INFO  Alloc 512 bytes
+2026-08-18 18:00:47,773 - ERROR - [pico  2379524ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:00:49,772 - WARNING - [pico  2381525ms] WARN  Rewind successful
+2026-08-18 18:00:51,468 - INFO - [pico  2383225ms] INFO  Alloc 1024 bytes
+2026-08-18 18:00:53,676 - INFO - [pico  2385425ms] INFO  Allocator reset
+2026-08-18 18:00:55,468 - WARNING - [pico  2387225ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:01:01,178 - INFO - [pico  2392926ms] INFO  Alloc 512 bytes
+2026-08-18 18:01:02,874 - INFO - [pico  2394626ms] INFO  Alloc 512 bytes
+2026-08-18 18:01:04,570 - INFO - [pico  2396326ms] INFO  Alloc 512 bytes
+2026-08-18 18:01:06,170 - ERROR - [pico  2397926ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:01:08,169 - WARNING - [pico  2399927ms] WARN  Rewind successful
+2026-08-18 18:01:09,865 - INFO - [pico  2401627ms] INFO  Alloc 1024 bytes
+2026-08-18 18:01:12,073 - INFO - [pico  2403827ms] INFO  Allocator reset
+2026-08-18 18:01:13,880 - WARNING - [pico  2405627ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:01:19,575 - INFO - [pico  2411328ms] INFO  Alloc 512 bytes
+2026-08-18 18:01:21,271 - INFO - [pico  2413028ms] INFO  Alloc 512 bytes
+2026-08-18 18:01:22,967 - INFO - [pico  2414728ms] INFO  Alloc 512 bytes
+2026-08-18 18:01:24,566 - ERROR - [pico  2416328ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:01:26,566 - WARNING - [pico  2418329ms] WARN  Rewind successful
+2026-08-18 18:01:28,278 - INFO - [pico  2420029ms] INFO  Alloc 1024 bytes
+2026-08-18 18:01:30,469 - INFO - [pico  2422229ms] INFO  Allocator reset
+2026-08-18 18:01:32,277 - WARNING - [pico  2424029ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:01:37,972 - INFO - [pico  2429729ms] INFO  Alloc 512 bytes
+2026-08-18 18:01:39,668 - INFO - [pico  2431429ms] INFO  Alloc 512 bytes
+2026-08-18 18:01:41,380 - INFO - [pico  2433130ms] INFO  Alloc 512 bytes
+2026-08-18 18:01:43,009 - ERROR - [pico  2434730ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:01:44,980 - WARNING - [pico  2436730ms] WARN  Rewind successful
+2026-08-18 18:01:46,675 - INFO - [pico  2438430ms] INFO  Alloc 1024 bytes
+2026-08-18 18:01:48,867 - INFO - [pico  2440630ms] INFO  Allocator reset
+2026-08-18 18:01:50,674 - WARNING - [pico  2442430ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:01:56,369 - INFO - [pico  2448131ms] INFO  Alloc 512 bytes
+2026-08-18 18:01:58,081 - INFO - [pico  2449831ms] INFO  Alloc 512 bytes
+2026-08-18 18:01:59,777 - INFO - [pico  2451531ms] INFO  Alloc 512 bytes
+2026-08-18 18:02:01,376 - ERROR - [pico  2453131ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:02:03,376 - WARNING - [pico  2455132ms] WARN  Rewind successful
+2026-08-18 18:02:05,071 - INFO - [pico  2456832ms] INFO  Alloc 1024 bytes
+2026-08-18 18:02:07,279 - INFO - [pico  2459032ms] INFO  Allocator reset
+2026-08-18 18:02:09,071 - WARNING - [pico  2460832ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:02:14,786 - INFO - [pico  2466533ms] INFO  Alloc 512 bytes
+2026-08-18 18:02:16,489 - INFO - [pico  2468233ms] INFO  Alloc 512 bytes
+2026-08-18 18:02:18,173 - INFO - [pico  2469933ms] INFO  Alloc 512 bytes
+2026-08-18 18:02:19,773 - ERROR - [pico  2471533ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:02:21,773 - WARNING - [pico  2473534ms] WARN  Rewind successful
+2026-08-18 18:02:23,468 - INFO - [pico  2475234ms] INFO  Alloc 1024 bytes
+2026-08-18 18:02:25,676 - INFO - [pico  2477434ms] INFO  Allocator reset
+2026-08-18 18:02:27,483 - WARNING - [pico  2479234ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:02:33,178 - INFO - [pico  2484935ms] INFO  Alloc 512 bytes
+2026-08-18 18:02:34,874 - INFO - [pico  2486635ms] INFO  Alloc 512 bytes
+2026-08-18 18:02:36,570 - INFO - [pico  2488335ms] INFO  Alloc 512 bytes
+2026-08-18 18:02:38,170 - ERROR - [pico  2489935ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:02:40,169 - WARNING - [pico  2491935ms] WARN  Rewind successful
+2026-08-18 18:02:41,881 - INFO - [pico  2493635ms] INFO  Alloc 1024 bytes
+2026-08-18 18:02:44,073 - INFO - [pico  2495835ms] INFO  Allocator reset
+2026-08-18 18:02:45,880 - WARNING - [pico  2497636ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:02:51,575 - INFO - [pico  2503336ms] INFO  Alloc 512 bytes
+2026-08-18 18:02:53,271 - INFO - [pico  2505036ms] INFO  Alloc 512 bytes
+2026-08-18 18:02:54,983 - INFO - [pico  2506736ms] INFO  Alloc 512 bytes
+2026-08-18 18:02:56,582 - ERROR - [pico  2508336ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:02:58,582 - WARNING - [pico  2510337ms] WARN  Rewind successful
+2026-08-18 18:03:00,278 - INFO - [pico  2512037ms] INFO  Alloc 1024 bytes
+2026-08-18 18:03:02,470 - INFO - [pico  2514237ms] INFO  Allocator reset
+2026-08-18 18:03:04,277 - WARNING - [pico  2516037ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:03:09,972 - INFO - [pico  2521738ms] INFO  Alloc 512 bytes
+2026-08-18 18:03:11,668 - INFO - [pico  2523438ms] INFO  Alloc 512 bytes
+2026-08-18 18:03:13,380 - INFO - [pico  2525138ms] INFO  Alloc 512 bytes
+2026-08-18 18:03:14,979 - ERROR - [pico  2526738ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:03:16,979 - WARNING - [pico  2528739ms] WARN  Rewind successful
+2026-08-18 18:03:18,675 - INFO - [pico  2530439ms] INFO  Alloc 1024 bytes
+2026-08-18 18:03:20,882 - INFO - [pico  2532639ms] INFO  Allocator reset
+2026-08-18 18:03:22,674 - WARNING - [pico  2534439ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:03:28,369 - INFO - [pico  2540140ms] INFO  Alloc 512 bytes
+2026-08-18 18:03:30,081 - INFO - [pico  2541840ms] INFO  Alloc 512 bytes
+2026-08-18 18:03:31,776 - INFO - [pico  2543540ms] INFO  Alloc 512 bytes
+2026-08-18 18:03:33,376 - ERROR - [pico  2545140ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:03:35,376 - WARNING - [pico  2547141ms] WARN  Rewind successful
+2026-08-18 18:03:37,072 - INFO - [pico  2548841ms] INFO  Alloc 1024 bytes
+2026-08-18 18:03:39,279 - INFO - [pico  2551041ms] INFO  Allocator reset
+2026-08-18 18:03:41,071 - WARNING - [pico  2552841ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:03:46,782 - INFO - [pico  2558541ms] INFO  Alloc 512 bytes
+2026-08-18 18:03:48,478 - INFO - [pico  2560241ms] INFO  Alloc 512 bytes
+2026-08-18 18:03:50,173 - INFO - [pico  2561942ms] INFO  Alloc 512 bytes
+2026-08-18 18:03:51,773 - ERROR - [pico  2563542ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:03:53,773 - WARNING - [pico  2565542ms] WARN  Rewind successful
+2026-08-18 18:03:55,484 - INFO - [pico  2567242ms] INFO  Alloc 1024 bytes
+2026-08-18 18:03:57,676 - INFO - [pico  2569442ms] INFO  Allocator reset
+2026-08-18 18:03:59,483 - WARNING - [pico  2571242ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:04:05,179 - INFO - [pico  2576943ms] INFO  Alloc 512 bytes
+2026-08-18 18:04:06,874 - INFO - [pico  2578643ms] INFO  Alloc 512 bytes
+2026-08-18 18:04:08,570 - INFO - [pico  2580343ms] INFO  Alloc 512 bytes
+2026-08-18 18:04:10,186 - ERROR - [pico  2581943ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:04:12,185 - WARNING - [pico  2583944ms] WARN  Rewind successful
+2026-08-18 18:04:13,881 - INFO - [pico  2585644ms] INFO  Alloc 1024 bytes
+2026-08-18 18:04:16,073 - INFO - [pico  2587844ms] INFO  Allocator reset
+2026-08-18 18:04:17,880 - WARNING - [pico  2589644ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:04:23,575 - INFO - [pico  2595345ms] INFO  Alloc 512 bytes
+2026-08-18 18:04:25,271 - INFO - [pico  2597045ms] INFO  Alloc 512 bytes
+2026-08-18 18:04:26,983 - INFO - [pico  2598745ms] INFO  Alloc 512 bytes
+2026-08-18 18:04:28,583 - ERROR - [pico  2600345ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:04:30,582 - WARNING - [pico  2602346ms] WARN  Rewind successful
+2026-08-18 18:04:32,278 - INFO - [pico  2604046ms] INFO  Alloc 1024 bytes
+2026-08-18 18:04:34,485 - INFO - [pico  2606246ms] INFO  Allocator reset
+2026-08-18 18:04:36,277 - WARNING - [pico  2608046ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:04:41,972 - INFO - [pico  2613747ms] INFO  Alloc 512 bytes
+2026-08-18 18:04:43,684 - INFO - [pico  2615447ms] INFO  Alloc 512 bytes
+2026-08-18 18:04:45,380 - INFO - [pico  2617147ms] INFO  Alloc 512 bytes
+2026-08-18 18:04:46,979 - ERROR - [pico  2618747ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:04:48,979 - WARNING - [pico  2620747ms] WARN  Rewind successful
+2026-08-18 18:04:50,675 - INFO - [pico  2622447ms] INFO  Alloc 1024 bytes
+2026-08-18 18:04:52,882 - INFO - [pico  2624647ms] INFO  Allocator reset
+2026-08-18 18:04:54,674 - WARNING - [pico  2626448ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:05:00,385 - INFO - [pico  2632148ms] INFO  Alloc 512 bytes
+2026-08-18 18:05:02,081 - INFO - [pico  2633848ms] INFO  Alloc 512 bytes
+2026-08-18 18:05:03,777 - INFO - [pico  2635548ms] INFO  Alloc 512 bytes
+2026-08-18 18:05:05,377 - ERROR - [pico  2637148ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:05:07,376 - WARNING - [pico  2639149ms] WARN  Rewind successful
+2026-08-18 18:05:09,071 - INFO - [pico  2640849ms] INFO  Alloc 1024 bytes
+2026-08-18 18:05:11,279 - INFO - [pico  2643049ms] INFO  Allocator reset
+2026-08-18 18:05:13,087 - WARNING - [pico  2644849ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:05:18,782 - INFO - [pico  2650550ms] INFO  Alloc 512 bytes
+2026-08-18 18:05:20,477 - INFO - [pico  2652250ms] INFO  Alloc 512 bytes
+2026-08-18 18:05:22,173 - INFO - [pico  2653950ms] INFO  Alloc 512 bytes
+2026-08-18 18:05:23,773 - ERROR - [pico  2655550ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:05:25,773 - WARNING - [pico  2657551ms] WARN  Rewind successful
+2026-08-18 18:05:27,484 - INFO - [pico  2659251ms] INFO  Alloc 1024 bytes
+2026-08-18 18:05:29,676 - INFO - [pico  2661451ms] INFO  Allocator reset
+2026-08-18 18:05:31,484 - WARNING - [pico  2663251ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:05:37,179 - INFO - [pico  2668952ms] INFO  Alloc 512 bytes
+2026-08-18 18:05:38,874 - INFO - [pico  2670652ms] INFO  Alloc 512 bytes
+2026-08-18 18:05:40,586 - INFO - [pico  2672352ms] INFO  Alloc 512 bytes
+2026-08-18 18:05:42,186 - ERROR - [pico  2673952ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:05:44,186 - WARNING - [pico  2675953ms] WARN  Rewind successful
+2026-08-18 18:05:45,881 - INFO - [pico  2677653ms] INFO  Alloc 1024 bytes
+2026-08-18 18:05:48,073 - INFO - [pico  2679853ms] INFO  Allocator reset
+2026-08-18 18:05:49,881 - WARNING - [pico  2681653ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:05:55,577 - INFO - [pico  2687353ms] INFO  Alloc 512 bytes
+2026-08-18 18:05:57,287 - INFO - [pico  2689053ms] INFO  Alloc 512 bytes
+2026-08-18 18:05:58,984 - INFO - [pico  2690754ms] INFO  Alloc 512 bytes
+2026-08-18 18:06:00,583 - ERROR - [pico  2692354ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:06:02,583 - WARNING - [pico  2694354ms] WARN  Rewind successful
+2026-08-18 18:06:04,278 - INFO - [pico  2696054ms] INFO  Alloc 1024 bytes
+2026-08-18 18:06:06,486 - INFO - [pico  2698254ms] INFO  Allocator reset
+2026-08-18 18:06:08,277 - WARNING - [pico  2700054ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:06:13,988 - INFO - [pico  2705755ms] INFO  Alloc 512 bytes
+2026-08-18 18:06:15,684 - INFO - [pico  2707455ms] INFO  Alloc 512 bytes
+2026-08-18 18:06:17,380 - INFO - [pico  2709155ms] INFO  Alloc 512 bytes
+2026-08-18 18:06:18,980 - ERROR - [pico  2710755ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:06:20,979 - WARNING - [pico  2712756ms] WARN  Rewind successful
+2026-08-18 18:06:22,675 - INFO - [pico  2714456ms] INFO  Alloc 1024 bytes
+2026-08-18 18:06:24,883 - INFO - [pico  2716656ms] INFO  Allocator reset
+2026-08-18 18:06:26,690 - WARNING - [pico  2718456ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:06:32,386 - INFO - [pico  2724157ms] INFO  Alloc 512 bytes
+2026-08-18 18:06:34,082 - INFO - [pico  2725857ms] INFO  Alloc 512 bytes
+2026-08-18 18:06:35,777 - INFO - [pico  2727557ms] INFO  Alloc 512 bytes
+2026-08-18 18:06:37,376 - ERROR - [pico  2729157ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:06:39,376 - WARNING - [pico  2731158ms] WARN  Rewind successful
+2026-08-18 18:06:41,088 - INFO - [pico  2732858ms] INFO  Alloc 1024 bytes
+2026-08-18 18:06:43,279 - INFO - [pico  2735058ms] INFO  Allocator reset
+2026-08-18 18:06:45,087 - WARNING - [pico  2736858ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:06:50,782 - INFO - [pico  2742559ms] INFO  Alloc 512 bytes
+2026-08-18 18:06:52,478 - INFO - [pico  2744259ms] INFO  Alloc 512 bytes
+2026-08-18 18:06:54,189 - INFO - [pico  2745959ms] INFO  Alloc 512 bytes
+2026-08-18 18:06:55,789 - ERROR - [pico  2747559ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:06:57,789 - WARNING - [pico  2749559ms] WARN  Rewind successful
+2026-08-18 18:06:59,485 - INFO - [pico  2751259ms] INFO  Alloc 1024 bytes
+2026-08-18 18:07:01,676 - INFO - [pico  2753459ms] INFO  Allocator reset
+2026-08-18 18:07:03,484 - WARNING - [pico  2755260ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:07:09,179 - INFO - [pico  2760960ms] INFO  Alloc 512 bytes
+2026-08-18 18:07:10,875 - INFO - [pico  2762660ms] INFO  Alloc 512 bytes
+2026-08-18 18:07:12,587 - INFO - [pico  2764360ms] INFO  Alloc 512 bytes
+2026-08-18 18:07:14,186 - ERROR - [pico  2765960ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:07:16,186 - WARNING - [pico  2767961ms] WARN  Rewind successful
+2026-08-18 18:07:17,882 - INFO - [pico  2769661ms] INFO  Alloc 1024 bytes
+2026-08-18 18:07:20,089 - INFO - [pico  2771861ms] INFO  Allocator reset
+2026-08-18 18:07:21,881 - WARNING - [pico  2773661ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:07:27,576 - INFO - [pico  2779362ms] INFO  Alloc 512 bytes
+2026-08-18 18:07:29,288 - INFO - [pico  2781062ms] INFO  Alloc 512 bytes
+2026-08-18 18:07:30,983 - INFO - [pico  2782762ms] INFO  Alloc 512 bytes
+2026-08-18 18:07:32,583 - ERROR - [pico  2784362ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:07:34,583 - WARNING - [pico  2786363ms] WARN  Rewind successful
+2026-08-18 18:07:36,278 - INFO - [pico  2788063ms] INFO  Alloc 1024 bytes
+2026-08-18 18:07:38,486 - INFO - [pico  2790263ms] INFO  Allocator reset
+2026-08-18 18:07:40,279 - WARNING - [pico  2792063ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:07:45,989 - INFO - [pico  2797764ms] INFO  Alloc 512 bytes
+2026-08-18 18:07:47,684 - INFO - [pico  2799464ms] INFO  Alloc 512 bytes
+2026-08-18 18:07:49,380 - INFO - [pico  2801164ms] INFO  Alloc 512 bytes
+2026-08-18 18:07:50,980 - ERROR - [pico  2802764ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:07:52,980 - WARNING - [pico  2804765ms] WARN  Rewind successful
+2026-08-18 18:07:54,691 - INFO - [pico  2806465ms] INFO  Alloc 1024 bytes
+2026-08-18 18:07:56,883 - INFO - [pico  2808665ms] INFO  Allocator reset
+2026-08-18 18:07:58,691 - WARNING - [pico  2810465ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:08:04,386 - INFO - [pico  2816165ms] INFO  Alloc 512 bytes
+2026-08-18 18:08:06,081 - INFO - [pico  2817865ms] INFO  Alloc 512 bytes
+2026-08-18 18:08:07,777 - INFO - [pico  2819566ms] INFO  Alloc 512 bytes
+2026-08-18 18:08:09,393 - ERROR - [pico  2821166ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:08:11,392 - WARNING - [pico  2823166ms] WARN  Rewind successful
+2026-08-18 18:08:13,088 - INFO - [pico  2824866ms] INFO  Alloc 1024 bytes
+2026-08-18 18:08:15,280 - INFO - [pico  2827066ms] INFO  Allocator reset
+2026-08-18 18:08:17,088 - WARNING - [pico  2828866ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:08:22,783 - INFO - [pico  2834567ms] INFO  Alloc 512 bytes
+2026-08-18 18:08:24,478 - INFO - [pico  2836267ms] INFO  Alloc 512 bytes
+2026-08-18 18:08:26,190 - INFO - [pico  2837967ms] INFO  Alloc 512 bytes
+2026-08-18 18:08:27,790 - ERROR - [pico  2839567ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:08:29,789 - WARNING - [pico  2841568ms] WARN  Rewind successful
+2026-08-18 18:08:31,485 - INFO - [pico  2843268ms] INFO  Alloc 1024 bytes
+2026-08-18 18:08:33,692 - INFO - [pico  2845468ms] INFO  Allocator reset
+2026-08-18 18:08:35,484 - WARNING - [pico  2847268ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:08:41,179 - INFO - [pico  2852969ms] INFO  Alloc 512 bytes
+2026-08-18 18:08:42,891 - INFO - [pico  2854669ms] INFO  Alloc 512 bytes
+2026-08-18 18:08:44,586 - INFO - [pico  2856369ms] INFO  Alloc 512 bytes
+2026-08-18 18:08:46,186 - ERROR - [pico  2857969ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:08:48,205 - WARNING - [pico  2859970ms] WARN  Rewind successful
+2026-08-18 18:08:49,881 - INFO - [pico  2861670ms] INFO  Alloc 1024 bytes
+2026-08-18 18:08:52,089 - INFO - [pico  2863870ms] INFO  Allocator reset
+2026-08-18 18:08:53,882 - WARNING - [pico  2865670ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:08:59,591 - INFO - [pico  2871371ms] INFO  Alloc 512 bytes
+2026-08-18 18:09:01,287 - INFO - [pico  2873071ms] INFO  Alloc 512 bytes
+2026-08-18 18:09:02,983 - INFO - [pico  2874771ms] INFO  Alloc 512 bytes
+2026-08-18 18:09:04,583 - ERROR - [pico  2876371ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:09:06,582 - WARNING - [pico  2878371ms] WARN  Rewind successful
+2026-08-18 18:09:08,294 - INFO - [pico  2880071ms] INFO  Alloc 1024 bytes
+2026-08-18 18:09:10,486 - INFO - [pico  2882271ms] INFO  Allocator reset
+2026-08-18 18:09:12,293 - WARNING - [pico  2884072ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:09:17,988 - INFO - [pico  2889772ms] INFO  Alloc 512 bytes
+2026-08-18 18:09:19,684 - INFO - [pico  2891472ms] INFO  Alloc 512 bytes
+2026-08-18 18:09:21,380 - INFO - [pico  2893172ms] INFO  Alloc 512 bytes
+2026-08-18 18:09:22,979 - ERROR - [pico  2894772ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:09:24,979 - WARNING - [pico  2896773ms] WARN  Rewind successful
+2026-08-18 18:09:26,691 - INFO - [pico  2898473ms] INFO  Alloc 1024 bytes
+2026-08-18 18:09:28,883 - INFO - [pico  2900673ms] INFO  Allocator reset
+2026-08-18 18:09:30,690 - WARNING - [pico  2902473ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:09:36,385 - INFO - [pico  2908174ms] INFO  Alloc 512 bytes
+2026-08-18 18:09:38,081 - INFO - [pico  2909874ms] INFO  Alloc 512 bytes
+2026-08-18 18:09:39,800 - INFO - [pico  2911574ms] INFO  Alloc 512 bytes
+2026-08-18 18:09:41,392 - ERROR - [pico  2913174ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:09:43,393 - WARNING - [pico  2915175ms] WARN  Rewind successful
+2026-08-18 18:09:45,087 - INFO - [pico  2916875ms] INFO  Alloc 1024 bytes
+2026-08-18 18:09:47,295 - INFO - [pico  2919075ms] INFO  Allocator reset
+2026-08-18 18:09:49,087 - WARNING - [pico  2920875ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:09:54,782 - INFO - [pico  2926576ms] INFO  Alloc 512 bytes
+2026-08-18 18:09:56,493 - INFO - [pico  2928276ms] INFO  Alloc 512 bytes
+2026-08-18 18:09:58,189 - INFO - [pico  2929976ms] INFO  Alloc 512 bytes
+2026-08-18 18:09:59,789 - ERROR - [pico  2931576ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:10:01,788 - WARNING - [pico  2933577ms] WARN  Rewind successful
+2026-08-18 18:10:03,484 - INFO - [pico  2935277ms] INFO  Alloc 1024 bytes
+2026-08-18 18:10:05,692 - INFO - [pico  2937477ms] INFO  Allocator reset
+2026-08-18 18:10:07,485 - WARNING - [pico  2939277ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:10:13,194 - INFO - [pico  2944977ms] INFO  Alloc 512 bytes
+2026-08-18 18:10:14,890 - INFO - [pico  2946678ms] INFO  Alloc 512 bytes
+2026-08-18 18:10:16,586 - INFO - [pico  2948378ms] INFO  Alloc 512 bytes
+2026-08-18 18:10:18,185 - ERROR - [pico  2949978ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:10:20,185 - WARNING - [pico  2951978ms] WARN  Rewind successful
+2026-08-18 18:10:21,881 - INFO - [pico  2953678ms] INFO  Alloc 1024 bytes
+2026-08-18 18:10:24,088 - INFO - [pico  2955878ms] INFO  Allocator reset
+2026-08-18 18:10:25,897 - WARNING - [pico  2957678ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:10:31,591 - INFO - [pico  2963379ms] INFO  Alloc 512 bytes
+2026-08-18 18:10:33,287 - INFO - [pico  2965079ms] INFO  Alloc 512 bytes
+2026-08-18 18:10:34,982 - INFO - [pico  2966779ms] INFO  Alloc 512 bytes
+2026-08-18 18:10:36,582 - ERROR - [pico  2968379ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:10:38,582 - WARNING - [pico  2970380ms] WARN  Rewind successful
+2026-08-18 18:10:40,294 - INFO - [pico  2972080ms] INFO  Alloc 1024 bytes
+2026-08-18 18:10:42,486 - INFO - [pico  2974280ms] INFO  Allocator reset
+2026-08-18 18:10:44,293 - WARNING - [pico  2976080ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:10:49,990 - INFO - [pico  2981781ms] INFO  Alloc 512 bytes
+2026-08-18 18:10:51,691 - INFO - [pico  2983481ms] INFO  Alloc 512 bytes
+2026-08-18 18:10:53,397 - INFO - [pico  2985181ms] INFO  Alloc 512 bytes
+2026-08-18 18:10:54,995 - ERROR - [pico  2986781ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:10:56,995 - WARNING - [pico  2988782ms] WARN  Rewind successful
+2026-08-18 18:10:58,690 - INFO - [pico  2990482ms] INFO  Alloc 1024 bytes
+2026-08-18 18:11:00,882 - INFO - [pico  2992682ms] INFO  Allocator reset
+2026-08-18 18:11:02,690 - WARNING - [pico  2994482ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:11:08,385 - INFO - [pico  3000183ms] INFO  Alloc 512 bytes
+2026-08-18 18:11:10,096 - INFO - [pico  3001883ms] INFO  Alloc 512 bytes
+2026-08-18 18:11:11,792 - INFO - [pico  3003583ms] INFO  Alloc 512 bytes
+2026-08-18 18:11:13,392 - ERROR - [pico  3005183ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:11:15,391 - WARNING - [pico  3007183ms] WARN  Rewind successful
+2026-08-18 18:11:17,087 - INFO - [pico  3008883ms] INFO  Alloc 1024 bytes
+2026-08-18 18:11:19,295 - INFO - [pico  3011083ms] INFO  Allocator reset
+2026-08-18 18:11:21,087 - WARNING - [pico  3012884ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:11:26,797 - INFO - [pico  3018584ms] INFO  Alloc 512 bytes
+2026-08-18 18:11:28,493 - INFO - [pico  3020284ms] INFO  Alloc 512 bytes
+2026-08-18 18:11:30,189 - INFO - [pico  3021984ms] INFO  Alloc 512 bytes
+2026-08-18 18:11:31,789 - ERROR - [pico  3023584ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:11:33,788 - WARNING - [pico  3025585ms] WARN  Rewind successful
+2026-08-18 18:11:35,484 - INFO - [pico  3027285ms] INFO  Alloc 1024 bytes
+2026-08-18 18:11:37,692 - INFO - [pico  3029485ms] INFO  Allocator reset
+2026-08-18 18:11:39,500 - WARNING - [pico  3031285ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:11:45,194 - INFO - [pico  3036986ms] INFO  Alloc 512 bytes
+2026-08-18 18:11:46,890 - INFO - [pico  3038686ms] INFO  Alloc 512 bytes
+2026-08-18 18:11:48,586 - INFO - [pico  3040386ms] INFO  Alloc 512 bytes
+2026-08-18 18:11:50,186 - ERROR - [pico  3041986ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:11:52,185 - WARNING - [pico  3043987ms] WARN  Rewind successful
+2026-08-18 18:11:53,897 - INFO - [pico  3045687ms] INFO  Alloc 1024 bytes
+2026-08-18 18:11:56,089 - INFO - [pico  3047887ms] INFO  Allocator reset
+2026-08-18 18:11:57,897 - WARNING - [pico  3049687ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:12:03,592 - INFO - [pico  3055388ms] INFO  Alloc 512 bytes
+2026-08-18 18:12:05,287 - INFO - [pico  3057088ms] INFO  Alloc 512 bytes
+2026-08-18 18:12:06,999 - INFO - [pico  3058788ms] INFO  Alloc 512 bytes
+2026-08-18 18:12:08,598 - ERROR - [pico  3060388ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:12:10,598 - WARNING - [pico  3062389ms] WARN  Rewind successful
+2026-08-18 18:12:12,294 - INFO - [pico  3064089ms] INFO  Alloc 1024 bytes
+2026-08-18 18:12:14,485 - INFO - [pico  3066289ms] INFO  Allocator reset
+2026-08-18 18:12:16,293 - WARNING - [pico  3068089ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:12:21,989 - INFO - [pico  3073789ms] INFO  Alloc 512 bytes
+2026-08-18 18:12:23,699 - INFO - [pico  3075490ms] INFO  Alloc 512 bytes
+2026-08-18 18:12:25,395 - INFO - [pico  3077190ms] INFO  Alloc 512 bytes
+2026-08-18 18:12:26,995 - ERROR - [pico  3078790ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:12:28,994 - WARNING - [pico  3080790ms] WARN  Rewind successful
+2026-08-18 18:12:30,690 - INFO - [pico  3082490ms] INFO  Alloc 1024 bytes
+2026-08-18 18:12:32,898 - INFO - [pico  3084690ms] INFO  Allocator reset
+2026-08-18 18:12:34,691 - WARNING - [pico  3086490ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:12:40,388 - INFO - [pico  3092191ms] INFO  Alloc 512 bytes
+2026-08-18 18:12:42,096 - INFO - [pico  3093891ms] INFO  Alloc 512 bytes
+2026-08-18 18:12:43,792 - INFO - [pico  3095591ms] INFO  Alloc 512 bytes
+2026-08-18 18:12:45,392 - ERROR - [pico  3097191ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:12:47,392 - WARNING - [pico  3099192ms] WARN  Rewind successful
+2026-08-18 18:12:49,090 - INFO - [pico  3100892ms] INFO  Alloc 1024 bytes
+2026-08-18 18:12:51,295 - INFO - [pico  3103092ms] INFO  Allocator reset
+2026-08-18 18:12:53,086 - WARNING - [pico  3104892ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:12:58,797 - INFO - [pico  3110593ms] INFO  Alloc 512 bytes
+2026-08-18 18:13:00,493 - INFO - [pico  3112293ms] INFO  Alloc 512 bytes
+2026-08-18 18:13:02,189 - INFO - [pico  3113993ms] INFO  Alloc 512 bytes
+2026-08-18 18:13:03,788 - ERROR - [pico  3115593ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:13:05,818 - WARNING - [pico  3117594ms] WARN  Rewind successful
+2026-08-18 18:13:07,505 - INFO - [pico  3119294ms] INFO  Alloc 1024 bytes
+2026-08-18 18:13:09,706 - INFO - [pico  3121494ms] INFO  Allocator reset
+2026-08-18 18:13:11,537 - WARNING - [pico  3123294ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:13:17,217 - INFO - [pico  3128995ms] INFO  Alloc 512 bytes
+2026-08-18 18:13:18,889 - INFO - [pico  3130695ms] INFO  Alloc 512 bytes
+2026-08-18 18:13:20,605 - INFO - [pico  3132395ms] INFO  Alloc 512 bytes
+2026-08-18 18:13:22,225 - ERROR - [pico  3133995ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:13:24,202 - WARNING - [pico  3135995ms] WARN  Rewind successful
+2026-08-18 18:13:25,905 - INFO - [pico  3137695ms] INFO  Alloc 1024 bytes
+2026-08-18 18:13:28,120 - INFO - [pico  3139896ms] INFO  Allocator reset
+2026-08-18 18:13:29,897 - WARNING - [pico  3141696ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:13:35,587 - INFO - [pico  3147396ms] INFO  Alloc 512 bytes
+2026-08-18 18:13:37,300 - INFO - [pico  3149096ms] INFO  Alloc 512 bytes
+2026-08-18 18:13:38,995 - INFO - [pico  3150796ms] INFO  Alloc 512 bytes
+2026-08-18 18:13:40,599 - ERROR - [pico  3152396ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:13:42,620 - WARNING - [pico  3154397ms] WARN  Rewind successful
+2026-08-18 18:13:44,290 - INFO - [pico  3156097ms] INFO  Alloc 1024 bytes
+2026-08-18 18:13:46,502 - INFO - [pico  3158297ms] INFO  Allocator reset
+2026-08-18 18:13:48,336 - WARNING - [pico  3160097ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:13:54,041 - INFO - [pico  3165798ms] INFO  Alloc 512 bytes
+2026-08-18 18:13:55,696 - INFO - [pico  3167498ms] INFO  Alloc 512 bytes
+2026-08-18 18:13:57,391 - INFO - [pico  3169198ms] INFO  Alloc 512 bytes
+2026-08-18 18:13:58,991 - ERROR - [pico  3170798ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:14:01,017 - WARNING - [pico  3172799ms] WARN  Rewind successful
+2026-08-18 18:14:02,749 - INFO - [pico  3174499ms] INFO  Alloc 1024 bytes
+2026-08-18 18:14:04,891 - INFO - [pico  3176699ms] INFO  Allocator reset
+2026-08-18 18:14:06,699 - WARNING - [pico  3178499ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:14:12,393 - INFO - [pico  3184200ms] INFO  Alloc 512 bytes
+2026-08-18 18:14:14,089 - INFO - [pico  3185900ms] INFO  Alloc 512 bytes
+2026-08-18 18:14:15,801 - INFO - [pico  3187600ms] INFO  Alloc 512 bytes
+2026-08-18 18:14:17,401 - ERROR - [pico  3189200ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:14:19,400 - WARNING - [pico  3191201ms] WARN  Rewind successful
+2026-08-18 18:14:21,096 - INFO - [pico  3192901ms] INFO  Alloc 1024 bytes
+2026-08-18 18:14:23,287 - INFO - [pico  3195101ms] INFO  Allocator reset
+2026-08-18 18:14:25,096 - WARNING - [pico  3196901ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:14:30,790 - INFO - [pico  3202601ms] INFO  Alloc 512 bytes
+2026-08-18 18:14:32,502 - INFO - [pico  3204302ms] INFO  Alloc 512 bytes
+2026-08-18 18:14:34,197 - INFO - [pico  3206002ms] INFO  Alloc 512 bytes
+2026-08-18 18:14:35,797 - ERROR - [pico  3207602ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:14:37,797 - WARNING - [pico  3209602ms] WARN  Rewind successful
+2026-08-18 18:14:39,492 - INFO - [pico  3211302ms] INFO  Alloc 1024 bytes
+2026-08-18 18:14:41,700 - INFO - [pico  3213502ms] INFO  Allocator reset
+2026-08-18 18:14:43,492 - WARNING - [pico  3215302ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:14:49,203 - INFO - [pico  3221003ms] INFO  Alloc 512 bytes
+2026-08-18 18:14:50,899 - INFO - [pico  3222703ms] INFO  Alloc 512 bytes
+2026-08-18 18:14:52,594 - INFO - [pico  3224403ms] INFO  Alloc 512 bytes
+2026-08-18 18:14:54,194 - ERROR - [pico  3226003ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:14:56,228 - WARNING - [pico  3228004ms] WARN  Rewind successful
+2026-08-18 18:14:57,889 - INFO - [pico  3229704ms] INFO  Alloc 1024 bytes
+2026-08-18 18:15:00,097 - INFO - [pico  3231904ms] INFO  Allocator reset
+2026-08-18 18:15:01,904 - WARNING - [pico  3233704ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:15:07,599 - INFO - [pico  3239405ms] INFO  Alloc 512 bytes
+2026-08-18 18:15:09,294 - INFO - [pico  3241105ms] INFO  Alloc 512 bytes
+2026-08-18 18:15:10,991 - INFO - [pico  3242805ms] INFO  Alloc 512 bytes
+2026-08-18 18:15:12,590 - ERROR - [pico  3244405ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:15:14,590 - WARNING - [pico  3246406ms] WARN  Rewind successful
+2026-08-18 18:15:16,303 - INFO - [pico  3248106ms] INFO  Alloc 1024 bytes
+2026-08-18 18:15:18,494 - INFO - [pico  3250306ms] INFO  Allocator reset
+2026-08-18 18:15:20,301 - WARNING - [pico  3252106ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:15:25,996 - INFO - [pico  3257807ms] INFO  Alloc 512 bytes
+2026-08-18 18:15:27,691 - INFO - [pico  3259507ms] INFO  Alloc 512 bytes
+2026-08-18 18:15:29,403 - INFO - [pico  3261207ms] INFO  Alloc 512 bytes
+2026-08-18 18:15:31,003 - ERROR - [pico  3262807ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:15:33,003 - WARNING - [pico  3264807ms] WARN  Rewind successful
+2026-08-18 18:15:34,698 - INFO - [pico  3266507ms] INFO  Alloc 1024 bytes
+2026-08-18 18:15:36,890 - INFO - [pico  3268708ms] INFO  Allocator reset
+2026-08-18 18:15:38,698 - WARNING - [pico  3270508ms] WARN  Stale rewind rejected as expected
+2026-08-18 18:15:44,393 - INFO - [pico  3276208ms] INFO  Alloc 512 bytes
+2026-08-18 18:15:46,104 - INFO - [pico  3277908ms] INFO  Alloc 512 bytes
+2026-08-18 18:15:47,800 - INFO - [pico  3279608ms] INFO  Alloc 512 bytes
+2026-08-18 18:15:49,400 - ERROR - [pico  3281208ms] ERROR FAILED to allocate 1024 bytes - 
+2026-08-18 18:15:51,399 - WARNING - [pico  3283209ms] WARN  Rewind successful
+2026-08-18 18:15:53,095 - INFO - [pico  3284909ms] INFO  Alloc 1024 bytes
+2026-08-18 18:15:55,303 - INFO - [pico  3287109ms] INFO  Allocator reset
+2026-08-18 18:15:57,094 - WARNING - [pico  3288909ms] WARN  Stale rewind rejected as expected

@@ -1,5 +1,6 @@
-#include <stdio.h>
+#include <cstdio>
 #include "pico/stdlib.h"
+#include "pico/time.h"
 #include "linear_allocator.hpp"
 #include "uart_log.hpp"
 
@@ -16,12 +17,14 @@ void blink(int count, int on_ms, int off_ms)
     }
 }
 
-// each signal_* both blinks AND logs, so LED and UART always agree
-void signal_ok(const char* message)       { blink(1, 500, 200); uart_log.log(LogLevel::INFO, message); } // 1 long blink
-void signal_fail(const char* message)     { blink(3, 100, 100); uart_log.log(LogLevel::ERROR, message); } // 3 short blinks
-void signal_rewind(const char* message)   { blink(2, 300, 200); uart_log.log(LogLevel::WARNING, message); } // 2 medium blinks
-void signal_rejected(const char* message) { blink(4, 100, 100); uart_log.log(LogLevel::WARNING, message); } // 4 short blinks
-void signal_reset(const char* message)    { blink(1, 1000, 200); uart_log.log(LogLevel::INFO, message); } // 1 very long blink
+void log_event(LogSeverity severity, const LinearAllocator& allocator, uint64_t exec_us, const char* action) {
+    char buf[220]; // Buffer to hold the log message
+    snprintf(buf, sizeof(buf), "%s | used=%u free=%u high=%u cap=%u | %llu us",
+            action, (unsigned int)allocator.used(), (unsigned int)allocator.freeSpace(),
+            (unsigned int)allocator.highWater(), (unsigned int)allocator.capacity(),
+            (unsigned long long)exec_us);
+    uart_log.log(severity, buf);
+}
 
 static uint8_t arena[2048];
 
@@ -35,42 +38,75 @@ int main()
 
     LinearAllocator allocator;
     allocator.init(arena, sizeof(arena));
-    uart_log.log(LogLevel::INFO, "LinearAllocator initialized with 2048 bytes.");
+    uart_log.log(LogSeverity::INFO, "LinearAllocator initialized with 2048 bytes.");
 
     while (true) {
-        void* ptr1 = allocator.allocate(512);
-        ptr1 ? signal_ok("Alloc 512 bytes") : signal_fail("Alloc 512 bytes FAILED");
+        uint64_t t0, dt;
+
+        t0 = time_us_64();
+        uint8_t* ptr1 = static_cast<uint8_t*>(allocator.allocate(512));
+        dt = time_us_64() - t0;
+        log_event(ptr1 ? LogSeverity::INFO : LogSeverity::ERROR, allocator, dt, ptr1 ? "Alloc 512 bytes" : "Alloc 512 bytes FAILED");
+        ptr1 ? blink(1, 500, 200) : blink(3, 100, 100);
+        if (ptr1) *ptr1 = 0x42; // Write a test value to the allocated memory
         sleep_ms(1000);
 
-        auto handle1 = allocator.handle();
+        auto mark = allocator.mark();
 
+        t0 = time_us_64();
         void* ptr2 = allocator.allocate(512);
-        ptr2 ? signal_ok("Alloc 512 bytes") : signal_fail("Alloc 512 bytes FAILED");
+        dt = time_us_64() - t0;
+        log_event(ptr2 ? LogSeverity::INFO : LogSeverity::ERROR, allocator, dt, ptr2 ? "Alloc 512 bytes" : "Alloc 512 bytes FAILED");
+        ptr2 ? blink(1, 500, 200) : blink(3, 100, 100);
         sleep_ms(1000);
 
+        t0 = time_us_64();
         void* ptr3 = allocator.allocate(512);
-        ptr3 ? signal_ok("Alloc 512 bytes") : signal_fail("Alloc 512 bytes FAILED");
+        dt = time_us_64() - t0;
+        log_event(ptr3 ? LogSeverity::INFO : LogSeverity::ERROR, allocator, dt, ptr3 ? "Alloc 512 bytes" : "Alloc 512 bytes FAILED");
+        ptr3 ? blink(1, 500, 200) : blink(3, 100, 100);
         sleep_ms(1000);
 
+        t0 = time_us_64();
         void* ptr4 = allocator.allocate(1024); // This allocation should fail
-        ptr4 ? signal_ok("Alloc 1024 bytes") : signal_fail("FAILED to allocate 1024 bytes - ");
+        dt = time_us_64() - t0;
+        log_event(ptr4 ? LogSeverity::INFO : LogSeverity::ERROR, allocator, dt, ptr4 ? "Alloc 1024 bytes" : "Alloc 1024 bytes FAILED");
+        ptr4 ? blink(1, 500, 200) : blink(3, 100, 100);
         sleep_ms(1000);
 
-        bool rewind_success = allocator.rewind(handle1); // Rewind to handle1 - freeing ptr2 and ptr3
-        rewind_success ? signal_rewind("Rewind successful") : signal_fail("Rewind failed");
+        t0 = time_us_64();
+        bool rewind_success = allocator.rewind(mark); // Rewind to mark - freeing ptr2 and ptr3
+        dt = time_us_64() - t0;
+        log_event(rewind_success ? LogSeverity::INFO : LogSeverity::ERROR, allocator, dt, rewind_success ? "Rewind successful, freed 1024 bytes" : "Rewind FAILED");
+        rewind_success ? blink(2, 300, 200) : blink(3, 100, 100);
         sleep_ms(1000);
 
+        t0 = time_us_64();
         void* ptr5 = allocator.allocate(1024); // This allocation should now succeed
-        ptr5 ? signal_ok("Alloc 1024 bytes") : signal_fail("FAILED to allocate 1024 bytes");
+        dt = time_us_64() - t0;
+        log_event(ptr5 ? LogSeverity::INFO : LogSeverity::ERROR, allocator, dt, ptr5 ? "Alloc 1024 bytes" : "Alloc 1024 bytes FAILED");
+        ptr5 ? blink(1, 500, 200) : blink(3, 100, 100);
         sleep_ms(1000);
 
-        auto stale = allocator.handle();
+        auto stale = allocator.mark();
+
+        t0 = time_us_64();
         allocator.reset(); // Reset the allocator, invalidating all handles
-        signal_reset("Allocator reset");
+        dt = time_us_64() - t0;
+        log_event(LogSeverity::INFO, allocator, dt, "Allocator reset");
+        blink(1, 1000, 200);
         sleep_ms(1000);
 
+        uint8_t after_rest_value = ptr1 ? *ptr1 : 0; // Check if ptr1 is still valid after reset
+        char buf[100];
+        snprintf(buf, sizeof(buf), "Pointer invalidation: wrote 0x42 before reset, read 0x%02X at %p after reset", after_rest_value, static_cast<void*>(ptr1));
+        uart_log.log(LogSeverity::INFO, buf);
+        sleep_ms(1000);
+        
         bool rewind_stale = allocator.rewind(stale); // Attempt to rewind to a stale handle
-        rewind_stale ? signal_rewind("BUG: stale rewind accepted") : signal_rejected("Stale rewind rejected as expected");
+        log_event(rewind_stale ? LogSeverity::ERROR : LogSeverity::WARNING, allocator, 0, rewind_stale ? "Rewind to stale mark succeeded (unexpected)" : "Rewind to stale mark failed (expected)");
+        rewind_stale ? blink(3, 100, 100) : blink(4, 100, 100);
+        
         sleep_ms(5000); // Wait before restarting the loop
     }
 }

@@ -6,7 +6,7 @@
 #include "hardware/gpio.h"
 #include "pico/time.h"
 
-enum class LogLevel : uint8_t{
+enum class LogSeverity : uint8_t{
     DEBUG = 0,
     INFO = 1,
     WARNING = 2,
@@ -26,7 +26,7 @@ public:
         gpio_set_function(UART_RX_PIN, GPIO_FUNC_UART);
     }
 
-    void log(LogLevel level, const char* message) {
+    void log(LogSeverity level, const char* message) {
         size_t message_length = strlen(message);
         if(message_length > 200) {
             message_length = 200; // Limit message length to 200 characters
