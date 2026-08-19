@@ -37,3 +37,37 @@
 2026-08-18 19:26:26,225 - INFO - [pico    84466ms] INFO  Rewind successful, freed 1024 bytes | used=512 free=1536 high=1536 cap=2048 | 5 us
 2026-08-18 19:26:28,230 - INFO - [pico    86471ms] INFO  Alloc 1024 bytes | used=1536 free=512 high=1536 cap=2048 | 1 us
 2026-08-18 19:26:29,933 - INFO - [pico    88175ms] INFO  Allocator reset | used=0 free=2048 high=1536 cap=2048 | 9 us
+2026-08-19 18:26:45,751 - INFO - Listening on COM4 at 115200 baud...
+2026-08-19 18:26:51,696 - INFO - [pico        1ms] INFO  LinearAllocator initialized with 2048 bytes.
+2026-08-19 18:26:51,699 - INFO - [pico        3ms] INFO  Alloc 512 bytes | used=512 free=1536 high=512 cap=2048 | 6 us
+2026-08-19 18:26:53,394 - INFO - [pico     1709ms] INFO  Alloc 512 bytes | used=1024 free=1024 high=1024 cap=2048 | 0 us
+2026-08-19 18:26:55,081 - INFO - [pico     3413ms] INFO  Alloc 512 bytes | used=1536 free=512 high=1536 cap=2048 | 1 us
+2026-08-19 18:26:56,785 - ERROR - [pico     5116ms] ERROR Alloc 1024 bytes FAILED - exhausted | used=1536 free=512 high=1536 cap=2048 | 1 us
+2026-08-19 18:26:58,390 - INFO - [pico     6721ms] INFO  Rewind to mark | used=512 free=1536 high=1536 cap=2048 | 13 us
+2026-08-19 18:27:00,395 - INFO - [pico     8725ms] INFO  Alloc 1024 bytes after rewind | used=1536 free=512 high=1536 cap=2048 | 1 us
+2026-08-19 18:27:02,098 - INFO - [pico    10429ms] INFO  Allocator reset | used=0 free=2048 high=1536 cap=2048 | 12 us
+2026-08-19 18:27:04,305 - WARNING - [pico    12633ms] WARN  Pointer invalidation: wrote 0x42 before reset, read 0xDD after reset
+2026-08-19 18:27:05,310 - WARNING - [pico    13637ms] WARN  Rewind to stale mark rejected (expected) | used=0 free=2048 high=1536 cap=2048 | 0 us
+2026-08-19 18:27:12,113 - INFO - [pico    20442ms] INFO  Alloc 512 bytes | used=512 free=1536 high=1536 cap=2048 | 1 us
+2026-08-19 18:27:13,816 - INFO - [pico    22145ms] INFO  Alloc 512 bytes | used=1024 free=1024 high=1536 cap=2048 | 1 us
+2026-08-19 18:27:15,519 - INFO - [pico    23849ms] INFO  Alloc 512 bytes | used=1536 free=512 high=1536 cap=2048 | 1 us
+2026-08-19 18:27:17,223 - ERROR - [pico    25552ms] ERROR Alloc 1024 bytes FAILED - exhausted | used=1536 free=512 high=1536 cap=2048 | 1 us
+2026-08-19 18:27:18,828 - INFO - [pico    27157ms] INFO  Rewind to mark | used=512 free=1536 high=1536 cap=2048 | 5 us
+2026-08-19 18:27:20,833 - INFO - [pico    29161ms] INFO  Alloc 1024 bytes after rewind | used=1536 free=512 high=1536 cap=2048 | 1 us
+2026-08-19 18:27:22,537 - INFO - [pico    30865ms] INFO  Allocator reset | used=0 free=2048 high=1536 cap=2048 | 9 us
+2026-08-19 18:27:24,740 - WARNING - [pico    33069ms] WARN  Pointer invalidation: wrote 0x42 before reset, read 0xDD after reset
+2026-08-19 18:27:25,744 - WARNING - [pico    34072ms] WARN  Rewind to stale mark rejected (expected) | used=0 free=2048 high=1536 cap=2048 | 1 us
+2026-08-19 18:27:32,550 - INFO - [pico    40878ms] INFO  Alloc 512 bytes | used=512 free=1536 high=1536 cap=2048 | 1 us
+2026-08-19 18:27:34,260 - INFO - [pico    42581ms] INFO  Alloc 512 bytes | used=1024 free=1024 high=1536 cap=2048 | 1 us
+2026-08-19 18:27:35,960 - INFO - [pico    44285ms] INFO  Alloc 512 bytes | used=1536 free=512 high=1536 cap=2048 | 1 us
+2026-08-19 18:27:37,661 - ERROR - [pico    45988ms] ERROR Alloc 1024 bytes FAILED - exhausted | used=1536 free=512 high=1536 cap=2048 | 1 us
+2026-08-19 18:27:39,267 - INFO - [pico    47593ms] INFO  Rewind to mark | used=512 free=1536 high=1536 cap=2048 | 5 us
+2026-08-19 18:27:41,271 - INFO - [pico    49597ms] INFO  Alloc 1024 bytes after rewind | used=1536 free=512 high=1536 cap=2048 | 1 us
+2026-08-19 18:27:42,974 - INFO - [pico    51301ms] INFO  Allocator reset | used=0 free=2048 high=1536 cap=2048 | 9 us
+2026-08-19 18:27:45,178 - WARNING - [pico    53505ms] WARN  Pointer invalidation: wrote 0x42 before reset, read 0xDD after reset
+2026-08-19 18:27:46,182 - WARNING - [pico    54508ms] WARN  Rewind to stale mark rejected (expected) | used=0 free=2048 high=1536 cap=2048 | 1 us
+2026-08-19 18:27:52,988 - INFO - [pico    61314ms] INFO  Alloc 512 bytes | used=512 free=1536 high=1536 cap=2048 | 1 us
+2026-08-19 18:27:54,691 - INFO - [pico    63017ms] INFO  Alloc 512 bytes | used=1024 free=1024 high=1536 cap=2048 | 1 us
+2026-08-19 18:27:56,395 - INFO - [pico    64721ms] INFO  Alloc 512 bytes | used=1536 free=512 high=1536 cap=2048 | 1 us
+2026-08-19 18:27:58,099 - ERROR - [pico    66424ms] ERROR Alloc 1024 bytes FAILED - exhausted | used=1536 free=512 high=1536 cap=2048 | 1 us
+2026-08-19 18:27:59,704 - INFO - [pico    68029ms] INFO  Rewind to mark | used=512 free=1536 high=1536 cap=2048 | 5 us
