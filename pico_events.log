@@ -71,3 +71,52 @@
 2026-08-19 18:27:56,395 - INFO - [pico    64721ms] INFO  Alloc 512 bytes | used=1536 free=512 high=1536 cap=2048 | 1 us
 2026-08-19 18:27:58,099 - ERROR - [pico    66424ms] ERROR Alloc 1024 bytes FAILED - exhausted | used=1536 free=512 high=1536 cap=2048 | 1 us
 2026-08-19 18:27:59,704 - INFO - [pico    68029ms] INFO  Rewind to mark | used=512 free=1536 high=1536 cap=2048 | 5 us
+2026-08-20 10:59:22,210 - INFO - Listening on COM4 at 115200 baud...
+2026-08-20 10:59:50,624 - INFO - [pico        1ms] INFO  init cap=4096
+2026-08-20 10:59:50,698 - INFO - [pico        1ms] INFO  Alloc 512 bytes | used=512 free=3584 high=512 cap=4096 | 6 us
+2026-08-20 10:59:52,327 - INFO - [pico     1707ms] INFO  allocArray<uint32_t>(64) ok ptr=20000788 last=3969 | used=768 free=3328 high=768 cap=4096 | 11 us
+2026-08-20 10:59:54,034 - INFO - [pico     3413ms] INFO  allocObject<Point>{7,42} ok ptr=20000888 x=7 y=42 | used=776 free=3320 high=776 cap=4096 | 8 us
+2026-08-20 10:59:55,739 - INFO - [pico     5119ms] INFO  Alloc 1024 bytes | used=1800 free=2296 high=1800 cap=4096 | 0 us
+2026-08-20 10:59:57,442 - INFO - [pico     6823ms] INFO  Alloc 1024 bytes | used=2824 free=1272 high=2824 cap=4096 | 1 us
+2026-08-20 10:59:59,146 - ERROR - [pico     8527ms] ERROR Alloc 1536 bytes FAILED - exhausted | used=2824 free=1272 high=2824 cap=4096 | 1 us
+2026-08-20 11:00:00,751 - INFO - [pico    10132ms] INFO  Rewind to mark | used=776 free=3320 high=2824 cap=4096 | 18 us
+2026-08-20 11:00:02,755 - INFO - [pico    12135ms] INFO  Alloc 1536 bytes after rewind | used=2312 free=1784 high=2824 cap=4096 | 1 us
+2026-08-20 11:00:04,459 - INFO - [pico    13840ms] INFO  Allocator reset | used=0 free=4096 high=2824 cap=4096 | 20 us
+2026-08-20 11:00:06,662 - WARNING - [pico    16043ms] WARN  Pointer invalidation: wrote 0x42 before reset, read 0xDD after reset
+2026-08-20 11:00:07,667 - WARNING - [pico    17047ms] WARN  Rewind to stale mark rejected (expected) | used=0 free=4096 high=2824 cap=4096 | 1 us
+2026-08-20 11:00:14,471 - INFO - [pico    23853ms] INFO  Alloc 512 bytes | used=512 free=3584 high=2824 cap=4096 | 1 us
+2026-08-20 11:00:16,174 - INFO - [pico    25556ms] INFO  allocArray<uint32_t>(64) ok ptr=20000788 last=3969 | used=768 free=3328 high=2824 cap=4096 | 5 us
+2026-08-20 11:00:17,881 - INFO - [pico    27263ms] INFO  allocObject<Point>{7,42} ok ptr=20000888 x=7 y=42 | used=776 free=3320 high=2824 cap=4096 | 2 us
+2026-08-20 11:00:19,587 - INFO - [pico    28969ms] INFO  Alloc 1024 bytes | used=1800 free=2296 high=2824 cap=4096 | 0 us
+2026-08-20 11:00:21,290 - INFO - [pico    30673ms] INFO  Alloc 1024 bytes | used=2824 free=1272 high=2824 cap=4096 | 1 us
+2026-08-20 11:00:22,995 - ERROR - [pico    32376ms] ERROR Alloc 1536 bytes FAILED - exhausted | used=2824 free=1272 high=2824 cap=4096 | 0 us
+2026-08-20 11:00:24,600 - INFO - [pico    33981ms] INFO  Rewind to mark | used=776 free=3320 high=2824 cap=4096 | 11 us
+2026-08-20 11:00:26,604 - INFO - [pico    35985ms] INFO  Alloc 1536 bytes after rewind | used=2312 free=1784 high=2824 cap=4096 | 1 us
+2026-08-20 11:00:28,307 - INFO - [pico    37690ms] INFO  Allocator reset | used=0 free=4096 high=2824 cap=4096 | 18 us
+2026-08-20 11:00:30,511 - WARNING - [pico    39893ms] WARN  Pointer invalidation: wrote 0x42 before reset, read 0xDD after reset
+2026-08-20 11:00:31,515 - WARNING - [pico    40897ms] WARN  Rewind to stale mark rejected (expected) | used=0 free=4096 high=2824 cap=4096 | 1 us
+2026-08-20 11:00:38,319 - INFO - [pico    47702ms] INFO  Alloc 512 bytes | used=512 free=3584 high=2824 cap=4096 | 1 us
+2026-08-20 11:00:40,023 - INFO - [pico    49406ms] INFO  allocArray<uint32_t>(64) ok ptr=20000788 last=3969 | used=768 free=3328 high=2824 cap=4096 | 5 us
+2026-08-20 11:00:41,729 - INFO - [pico    51112ms] INFO  allocObject<Point>{7,42} ok ptr=20000888 x=7 y=42 | used=776 free=3320 high=2824 cap=4096 | 2 us
+2026-08-20 11:00:43,436 - INFO - [pico    52819ms] INFO  Alloc 1024 bytes | used=1800 free=2296 high=2824 cap=4096 | 1 us
+2026-08-20 11:00:45,140 - INFO - [pico    54522ms] INFO  Alloc 1024 bytes | used=2824 free=1272 high=2824 cap=4096 | 1 us
+2026-08-20 11:00:46,842 - ERROR - [pico    56226ms] ERROR Alloc 1536 bytes FAILED - exhausted | used=2824 free=1272 high=2824 cap=4096 | 0 us
+2026-08-20 11:00:48,448 - INFO - [pico    57831ms] INFO  Rewind to mark | used=776 free=3320 high=2824 cap=4096 | 10 us
+2026-08-20 11:00:50,453 - INFO - [pico    59834ms] INFO  Alloc 1536 bytes after rewind | used=2312 free=1784 high=2824 cap=4096 | 1 us
+2026-08-20 11:00:52,155 - INFO - [pico    61539ms] INFO  Allocator reset | used=0 free=4096 high=2824 cap=4096 | 18 us
+2026-08-20 11:00:54,359 - WARNING - [pico    63742ms] WARN  Pointer invalidation: wrote 0x42 before reset, read 0xDD after reset
+2026-08-20 11:00:55,363 - WARNING - [pico    64746ms] WARN  Rewind to stale mark rejected (expected) | used=0 free=4096 high=2824 cap=4096 | 1 us
+2026-08-20 11:01:02,168 - INFO - [pico    71552ms] INFO  Alloc 512 bytes | used=512 free=3584 high=2824 cap=4096 | 1 us
+2026-08-20 11:01:03,872 - INFO - [pico    73255ms] INFO  allocArray<uint32_t>(64) ok ptr=20000788 last=3969 | used=768 free=3328 high=2824 cap=4096 | 5 us
+2026-08-20 11:01:05,577 - INFO - [pico    74962ms] INFO  allocObject<Point>{7,42} ok ptr=20000888 x=7 y=42 | used=776 free=3320 high=2824 cap=4096 | 1 us
+2026-08-20 11:01:07,284 - INFO - [pico    76668ms] INFO  Alloc 1024 bytes | used=1800 free=2296 high=2824 cap=4096 | 0 us
+2026-08-20 11:01:08,988 - INFO - [pico    78372ms] INFO  Alloc 1024 bytes | used=2824 free=1272 high=2824 cap=4096 | 1 us
+2026-08-20 11:01:10,690 - ERROR - [pico    80075ms] ERROR Alloc 1536 bytes FAILED - exhausted | used=2824 free=1272 high=2824 cap=4096 | 0 us
+2026-08-20 11:01:12,296 - INFO - [pico    81681ms] INFO  Rewind to mark | used=776 free=3320 high=2824 cap=4096 | 11 us
+2026-08-20 11:01:14,301 - INFO - [pico    83684ms] INFO  Alloc 1536 bytes after rewind | used=2312 free=1784 high=2824 cap=4096 | 1 us
+2026-08-20 11:01:16,004 - INFO - [pico    85389ms] INFO  Allocator reset | used=0 free=4096 high=2824 cap=4096 | 18 us
+2026-08-20 11:01:18,207 - WARNING - [pico    87592ms] WARN  Pointer invalidation: wrote 0x42 before reset, read 0xDD after reset
+2026-08-20 11:01:19,211 - WARNING - [pico    88596ms] WARN  Rewind to stale mark rejected (expected) | used=0 free=4096 high=2824 cap=4096 | 0 us
+2026-08-20 11:01:26,016 - INFO - [pico    95401ms] INFO  Alloc 512 bytes | used=512 free=3584 high=2824 cap=4096 | 1 us
+2026-08-20 11:01:27,720 - INFO - [pico    97105ms] INFO  allocArray<uint32_t>(64) ok ptr=20000788 last=3969 | used=768 free=3328 high=2824 cap=4096 | 5 us
+2026-08-20 11:01:29,426 - INFO - [pico    98811ms] INFO  allocObject<Point>{7,42} ok ptr=20000888 x=7 y=42 | used=776 free=3320 high=2824 cap=4096 | 1 us

@@ -2,6 +2,8 @@
 #include <cstddef>
 #include <cstdint>
 #include <cstring>
+#include <new>
+#include <utility>
 
 // A simple linear allocator for embedded systems.
 // It allocates memory linearly from a pre-allocated buffer and supports rewinding to a previous mark.
@@ -37,6 +39,37 @@ public:
         }
         return ptr;
     }
+
+    // Allocates an object of type T with the given constructor arguments
+    template <typename T, typename... Args>
+    T* allocateObject(Args&&... args) {
+        void* mem = allocate(sizeof(T), alignof(T));
+        if (!mem) {
+            return nullptr; // Allocation failed
+        }
+        return new (mem) T(std::forward<Args>(args)...); // Placement new
+    }
+
+    // Allocates an array of objects of type T with the given count
+    template <typename T>
+    T* allocateArray(size_t count) {
+        if (count == 0) {
+            return nullptr; // No allocation for zero count
+        }
+        if (count > capacity_ / sizeof(T)) {
+            return nullptr; // Prevent overflow
+        }
+        void* mem = allocate(sizeof(T) * count, alignof(T));
+        if (!mem) {
+            return nullptr; // Allocation failed
+        }
+        T* array_ptr = static_cast<T*>(mem);
+        for (size_t i = 0; i < count; ++i) {
+            new (&array_ptr[i]) T(); // Default-construct each element
+        }
+        return array_ptr;
+    }
+
 
     // Returns a mark that can be used to rewind the allocator to this point
     Mark mark() const {
