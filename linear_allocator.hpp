@@ -27,16 +27,23 @@ public:
     };
 
     // Allocates a block of memory of the given size and alignment
-    void* allocate(size_t size, size_t alignment = 4) { // 4-byte alignment by default
-        size_t start = alignup(offset_, alignment);
-        if (start + size > capacity_) {
+    void* allocate(size_t size, size_t alignment = 4) { // 4-byte alignment by default 
+        if (alignment == 0) alignment = 1;
+        if (alignment & (alignment - 1)) return nullptr; // alignment must be power of two
+
+        uintptr_t base_addr = reinterpret_cast<uintptr_t>(base_);
+        uintptr_t aligned   = alignup(base_addr + offset_, alignment);
+        size_t    start     = static_cast<size_t>(aligned - base_addr);
+
+        if (start < offset_) return nullptr;                // adress arithmetic overflowed
+        if (size > capacity_ || start > capacity_ - size) { // no overflow
             return nullptr; // Not enough space
         }
+
         void* ptr = base_ + start;
         offset_ = start + size;
-        if (offset_ > high_water_) {
-            high_water_ = offset_;
-        }
+        if (offset_ > high_water_) high_water_ = offset_;
+
         return ptr;
     }
 
@@ -100,8 +107,8 @@ public:
 
 private:
     // Aligns the given value up to the nearest multiple of the specified alignment
-    size_t alignup(size_t value, size_t alignment) const {
-        return (value + alignment - 1) & ~(alignment - 1); 
+    static uintptr_t alignup(uintptr_t value, size_t alignment) {
+        return (value + alignment - 1) & ~(static_cast<uintptr_t>(alignment) - 1); 
     }
 
     uint8_t* base_ = nullptr; // Pointer to the start of the allocated buffer

@@ -8,7 +8,8 @@ static uint LED_PIN;
 static UartLog uart_log;
 
 static constexpr size_t ARENA_SIZE = 4096;
-static uint8_t arena[ARENA_SIZE]; // Pre-allocated buffer for the linear allocator
+alignas(16) static uint8_t arena[ARENA_SIZE]; // Pre-allocated buffer for the linear allocator
+alignas(16) static uint8_t align_arena[256]; // buffer fo alignment demo
 
 // blink patterns (count, on_ms, off_ms)
 struct BlinkPattern {
@@ -123,6 +124,57 @@ void demo_alloc_object(LinearAllocator& a) {
     }
 }
 
+// deliberately misaligns the cursor, then allocates with a stricter requirement
+// and logs the resulting address so alignment is shown, not asserted
+void demo_alignment() {
+    LinearAllocator aa;
+    aa.init(align_arena, sizeof(align_arena));
+
+    static constexpr size_t ALIGNMENTS[] = { 1, 2, 4, 8, 16 };
+    bool all_ok = true;
+
+    for (size_t align : ALIGNMENTS) {
+        aa.allocate(1, 1); // 1 byte, no padding: cursor is now odd
+        size_t before = aa.used();
+        
+        uint64_t t0 = time_us_64();
+        void* p = aa.allocate(4, align);
+        uint64_t dt = time_us_64() - t0;
+
+        bool ok = p && ((uintptr_t)p % align == 0);
+        if (!ok) all_ok = false;
+
+        char msg[180];
+        snprintf(msg, sizeof(msg),
+                "align %2u: cursor was %u (unaligned), ptr=%p, ptr%%%u=%u -> %s | %llu us", 
+                (unsigned)align, (unsigned)before, p, (unsigned)align, (unsigned)((uintptr_t)p % align), 
+                ok ? "ALIGNED ok" : "MISALIGNED - BUG", (unsigned long long)dt);
+        uart_log.log(ok ? LogSeverity::INFO : LogSeverity::ERROR, msg); 
+        sleep_ms(300);
+    }
+
+    // alignof-driven: the caller never states the alignment, the type does
+    aa.allocate(1, 1); // misalign again
+    uint64_t* big = aa.allocateObject<uint64_t>(0x1122334455667788ULL);
+    bool typed_ok = big && ((uintptr_t)big % alignof(uint64_t) == 0);
+    if (!typed_ok) all_ok = false;
+
+    char msg[180];
+    snprintf(msg, sizeof(msg),
+            "alignof-driven: allocObject<uint64_t> ptr=%p, alignof=%u, ptr%%%u=%u, value=0x%llX -> %s",
+            (void*)big, (unsigned)alignof(uint64_t), (unsigned)alignof(uint64_t),
+            (unsigned)((uintptr_t)big % alignof(uint64_t)), 
+            big ? (unsigned long long)*big : 0ULL,
+            typed_ok ? "ALIGNED ok" : "MISALIGNED - BUG");
+    uart_log.log(typed_ok ? LogSeverity::INFO : LogSeverity::ERROR, msg);
+    sleep_ms(300);
+    
+    uart_log.log(all_ok ? LogSeverity::INFO : LogSeverity::ERROR,
+                all_ok ? "alignment check: ALL PASSED" : "alignment check: FAILURES PRESENT");
+    blink(all_ok ? PATTERN_OK : PATTERN_FAIL);
+    sleep_ms(1000);
+}
+
 int main()
 {
     LED_PIN = PICO_DEFAULT_LED_PIN;
@@ -138,6 +190,9 @@ int main()
     uart_log.log(LogSeverity::INFO, init_msg);
 
     while (true) {
+        // alligment guarentee, on separate arena - so sizes below stay exact
+        demo_alignment();
+
         // allocate and write a marker through the returned pointer to check if the pointer is still valid after reset
         uint8_t* ptr1 = static_cast<uint8_t*>(try_allocate(allocator, 512, "Alloc 512 bytes", "Alloc 512 bytes FAILED"));
         if (ptr1) *ptr1 = 0x42; // Write a test value to the allocated memory
