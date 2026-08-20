@@ -1,0 +1,92 @@
+2026-08-20 11:47:13,457 - INFO - Listening on COM4 at 115200 baud...
+2026-08-20 11:47:16,447 - INFO - [pico        0ms] INFO  init cap=4096
+2026-08-20 11:47:16,468 - INFO - [pico        0ms] INFO  align  1: cursor was 1 (unaligned), ptr=20000411, ptr%1=0 -> ALIGNED ok | 3 us
+2026-08-20 11:47:16,771 - INFO - [pico      307ms] INFO  align  2: cursor was 6 (unaligned), ptr=20000416, ptr%2=0 -> ALIGNED ok | 1 us
+2026-08-20 11:47:17,075 - INFO - [pico      612ms] INFO  align  4: cursor was 11 (unaligned), ptr=2000041C, ptr%4=0 -> ALIGNED ok | 1 us
+2026-08-20 11:47:17,379 - INFO - [pico      917ms] INFO  align  8: cursor was 17 (unaligned), ptr=20000428, ptr%8=0 -> ALIGNED ok | 1 us
+2026-08-20 11:47:17,688 - INFO - [pico     1221ms] INFO  align 16: cursor was 29 (unaligned), ptr=20000430, ptr%16=0 -> ALIGNED ok | 1 us
+2026-08-20 11:47:17,991 - INFO - [pico     1526ms] INFO  alignof-driven: allocObject<uint64_t> ptr=20000438, alignof=8, ptr%8=0, value=0x1122334455667788 -> ALIGNED ok
+2026-08-20 11:47:18,295 - INFO - [pico     1834ms] INFO  alignment check: ALL PASSED
+2026-08-20 11:47:19,999 - INFO - [pico     3534ms] INFO  Alloc 512 bytes | used=512 free=3584 high=512 cap=4096 | 2 us
+2026-08-20 11:47:21,703 - INFO - [pico     5238ms] INFO  allocArray<uint32_t>(64) ok ptr=20000710 last=3969 | used=768 free=3328 high=768 cap=4096 | 11 us
+2026-08-20 11:47:23,410 - INFO - [pico     6944ms] INFO  allocObject<Point>{7,42} ok ptr=20000810 x=7 y=42 | used=776 free=3320 high=776 cap=4096 | 8 us
+2026-08-20 11:47:25,147 - INFO - [pico     8651ms] INFO  Alloc 1024 bytes | used=1800 free=2296 high=1800 cap=4096 | 1 us
+2026-08-20 11:47:26,819 - INFO - [pico    10354ms] INFO  Alloc 1024 bytes | used=2824 free=1272 high=2824 cap=4096 | 1 us
+2026-08-20 11:47:28,523 - ERROR - [pico    12058ms] ERROR Alloc 1536 bytes FAILED - exhausted | used=2824 free=1272 high=2824 cap=4096 | 1 us
+2026-08-20 11:47:30,128 - INFO - [pico    13663ms] INFO  Rewind to mark | used=776 free=3320 high=2824 cap=4096 | 16 us
+2026-08-20 11:47:32,132 - INFO - [pico    15666ms] INFO  Alloc 1536 bytes after rewind | used=2312 free=1784 high=2824 cap=4096 | 1 us
+2026-08-20 11:47:33,835 - INFO - [pico    17371ms] INFO  Allocator reset | used=0 free=4096 high=2824 cap=4096 | 21 us
+2026-08-20 11:47:36,038 - WARNING - [pico    19575ms] WARN  Pointer invalidation: wrote 0x42 before reset, read 0xDD after reset
+2026-08-20 11:47:37,042 - WARNING - [pico    20578ms] WARN  Rewind to stale mark rejected (expected) | used=0 free=4096 high=2824 cap=4096 | 0 us
+2026-08-20 11:47:43,847 - INFO - [pico    27384ms] INFO  align  1: cursor was 1 (unaligned), ptr=20000411, ptr%1=0 -> ALIGNED ok | 0 us
+2026-08-20 11:47:44,151 - INFO - [pico    27689ms] INFO  align  2: cursor was 6 (unaligned), ptr=20000416, ptr%2=0 -> ALIGNED ok | 0 us
+2026-08-20 11:47:44,455 - INFO - [pico    27994ms] INFO  align  4: cursor was 11 (unaligned), ptr=2000041C, ptr%4=0 -> ALIGNED ok | 0 us
+2026-08-20 11:47:44,764 - INFO - [pico    28298ms] INFO  align  8: cursor was 17 (unaligned), ptr=20000428, ptr%8=0 -> ALIGNED ok | 0 us
+2026-08-20 11:47:45,067 - INFO - [pico    28603ms] INFO  align 16: cursor was 29 (unaligned), ptr=20000430, ptr%16=0 -> ALIGNED ok | 0 us
+2026-08-20 11:47:45,376 - INFO - [pico    28908ms] INFO  alignof-driven: allocObject<uint64_t> ptr=20000438, alignof=8, ptr%8=0, value=0x1122334455667788 -> ALIGNED ok
+2026-08-20 11:47:45,663 - INFO - [pico    29216ms] INFO  alignment check: ALL PASSED
+2026-08-20 11:47:47,375 - INFO - [pico    30916ms] INFO  Alloc 512 bytes | used=512 free=3584 high=2824 cap=4096 | 1 us
+2026-08-20 11:47:49,084 - INFO - [pico    32620ms] INFO  allocArray<uint32_t>(64) ok ptr=20000710 last=3969 | used=768 free=3328 high=2824 cap=4096 | 5 us
+2026-08-20 11:47:50,789 - INFO - [pico    34326ms] INFO  allocObject<Point>{7,42} ok ptr=20000810 x=7 y=42 | used=776 free=3320 high=2824 cap=4096 | 1 us
+2026-08-20 11:47:52,495 - INFO - [pico    36033ms] INFO  Alloc 1024 bytes | used=1800 free=2296 high=2824 cap=4096 | 1 us
+2026-08-20 11:47:54,200 - INFO - [pico    37736ms] INFO  Alloc 1024 bytes | used=2824 free=1272 high=2824 cap=4096 | 1 us
+2026-08-20 11:47:55,906 - ERROR - [pico    39440ms] ERROR Alloc 1536 bytes FAILED - exhausted | used=2824 free=1272 high=2824 cap=4096 | 1 us
+2026-08-20 11:47:57,508 - INFO - [pico    41045ms] INFO  Rewind to mark | used=776 free=3320 high=2824 cap=4096 | 10 us
+2026-08-20 11:47:59,512 - INFO - [pico    43048ms] INFO  Alloc 1536 bytes after rewind | used=2312 free=1784 high=2824 cap=4096 | 1 us
+2026-08-20 11:48:01,215 - INFO - [pico    44753ms] INFO  Allocator reset | used=0 free=4096 high=2824 cap=4096 | 18 us
+2026-08-20 11:48:03,419 - WARNING - [pico    46956ms] WARN  Pointer invalidation: wrote 0x42 before reset, read 0xDD after reset
+2026-08-20 11:48:04,422 - WARNING - [pico    47960ms] WARN  Rewind to stale mark rejected (expected) | used=0 free=4096 high=2824 cap=4096 | 1 us
+2026-08-20 11:48:11,228 - INFO - [pico    54766ms] INFO  align  1: cursor was 1 (unaligned), ptr=20000411, ptr%1=0 -> ALIGNED ok | 0 us
+2026-08-20 11:48:11,532 - INFO - [pico    55071ms] INFO  align  2: cursor was 6 (unaligned), ptr=20000416, ptr%2=0 -> ALIGNED ok | 0 us
+2026-08-20 11:48:11,836 - INFO - [pico    55375ms] INFO  align  4: cursor was 11 (unaligned), ptr=2000041C, ptr%4=0 -> ALIGNED ok | 0 us
+2026-08-20 11:48:12,140 - INFO - [pico    55680ms] INFO  align  8: cursor was 17 (unaligned), ptr=20000428, ptr%8=0 -> ALIGNED ok | 0 us
+2026-08-20 11:48:12,449 - INFO - [pico    55985ms] INFO  align 16: cursor was 29 (unaligned), ptr=20000430, ptr%16=0 -> ALIGNED ok | 0 us
+2026-08-20 11:48:12,753 - INFO - [pico    56290ms] INFO  alignof-driven: allocObject<uint64_t> ptr=20000438, alignof=8, ptr%8=0, value=0x1122334455667788 -> ALIGNED ok
+2026-08-20 11:48:13,056 - INFO - [pico    56598ms] INFO  alignment check: ALL PASSED
+2026-08-20 11:48:14,759 - INFO - [pico    58298ms] INFO  Alloc 512 bytes | used=512 free=3584 high=2824 cap=4096 | 1 us
+2026-08-20 11:48:16,464 - INFO - [pico    60002ms] INFO  allocArray<uint32_t>(64) ok ptr=20000710 last=3969 | used=768 free=3328 high=2824 cap=4096 | 5 us
+2026-08-20 11:48:18,170 - INFO - [pico    61708ms] INFO  allocObject<Point>{7,42} ok ptr=20000810 x=7 y=42 | used=776 free=3320 high=2824 cap=4096 | 1 us
+2026-08-20 11:48:19,876 - INFO - [pico    63414ms] INFO  Alloc 1024 bytes | used=1800 free=2296 high=2824 cap=4096 | 1 us
+2026-08-20 11:48:21,625 - INFO - [pico    65118ms] INFO  Alloc 1024 bytes | used=2824 free=1272 high=2824 cap=4096 | 1 us
+2026-08-20 11:48:23,285 - ERROR - [pico    66822ms] ERROR Alloc 1536 bytes FAILED - exhausted | used=2824 free=1272 high=2824 cap=4096 | 1 us
+2026-08-20 11:48:24,885 - INFO - [pico    68427ms] INFO  Rewind to mark | used=776 free=3320 high=2824 cap=4096 | 9 us
+2026-08-20 11:48:26,892 - INFO - [pico    70430ms] INFO  Alloc 1536 bytes after rewind | used=2312 free=1784 high=2824 cap=4096 | 1 us
+2026-08-20 11:48:28,597 - INFO - [pico    72135ms] INFO  Allocator reset | used=0 free=4096 high=2824 cap=4096 | 18 us
+2026-08-20 11:48:30,799 - WARNING - [pico    74338ms] WARN  Pointer invalidation: wrote 0x42 before reset, read 0xDD after reset
+2026-08-20 11:48:31,803 - WARNING - [pico    75342ms] WARN  Rewind to stale mark rejected (expected) | used=0 free=4096 high=2824 cap=4096 | 1 us
+2026-08-20 11:48:38,609 - INFO - [pico    82148ms] INFO  align  1: cursor was 1 (unaligned), ptr=20000411, ptr%1=0 -> ALIGNED ok | 0 us
+2026-08-20 11:48:38,912 - INFO - [pico    82452ms] INFO  align  2: cursor was 6 (unaligned), ptr=20000416, ptr%2=0 -> ALIGNED ok | 0 us
+2026-08-20 11:48:39,215 - INFO - [pico    82757ms] INFO  align  4: cursor was 11 (unaligned), ptr=2000041C, ptr%4=0 -> ALIGNED ok | 0 us
+2026-08-20 11:48:39,524 - INFO - [pico    83062ms] INFO  align  8: cursor was 17 (unaligned), ptr=20000428, ptr%8=0 -> ALIGNED ok | 0 us
+2026-08-20 11:48:39,827 - INFO - [pico    83367ms] INFO  align 16: cursor was 29 (unaligned), ptr=20000430, ptr%16=0 -> ALIGNED ok | 0 us
+2026-08-20 11:48:40,136 - INFO - [pico    83672ms] INFO  alignof-driven: allocObject<uint64_t> ptr=20000438, alignof=8, ptr%8=0, value=0x1122334455667788 -> ALIGNED ok
+2026-08-20 11:48:40,424 - INFO - [pico    83980ms] INFO  alignment check: ALL PASSED
+2026-08-20 11:48:42,141 - INFO - [pico    85680ms] INFO  Alloc 512 bytes | used=512 free=3584 high=2824 cap=4096 | 1 us
+2026-08-20 11:48:43,845 - INFO - [pico    87383ms] INFO  allocArray<uint32_t>(64) ok ptr=20000710 last=3969 | used=768 free=3328 high=2824 cap=4096 | 5 us
+2026-08-20 11:48:45,550 - INFO - [pico    89090ms] INFO  allocObject<Point>{7,42} ok ptr=20000810 x=7 y=42 | used=776 free=3320 high=2824 cap=4096 | 1 us
+2026-08-20 11:48:47,256 - INFO - [pico    90796ms] INFO  Alloc 1024 bytes | used=1800 free=2296 high=2824 cap=4096 | 1 us
+2026-08-20 11:48:48,960 - INFO - [pico    92500ms] INFO  Alloc 1024 bytes | used=2824 free=1272 high=2824 cap=4096 | 1 us
+2026-08-20 11:48:50,663 - ERROR - [pico    94203ms] ERROR Alloc 1536 bytes FAILED - exhausted | used=2824 free=1272 high=2824 cap=4096 | 1 us
+2026-08-20 11:48:52,268 - INFO - [pico    95809ms] INFO  Rewind to mark | used=776 free=3320 high=2824 cap=4096 | 9 us
+2026-08-20 11:48:54,273 - INFO - [pico    97812ms] INFO  Alloc 1536 bytes after rewind | used=2312 free=1784 high=2824 cap=4096 | 1 us
+2026-08-20 11:48:55,977 - INFO - [pico    99517ms] INFO  Allocator reset | used=0 free=4096 high=2824 cap=4096 | 18 us
+2026-08-20 11:48:58,180 - WARNING - [pico   101720ms] WARN  Pointer invalidation: wrote 0x42 before reset, read 0xDD after reset
+2026-08-20 11:48:59,183 - WARNING - [pico   102724ms] WARN  Rewind to stale mark rejected (expected) | used=0 free=4096 high=2824 cap=4096 | 1 us
+2026-08-20 11:49:05,988 - INFO - [pico   109529ms] INFO  align  1: cursor was 1 (unaligned), ptr=20000411, ptr%1=0 -> ALIGNED ok | 0 us
+2026-08-20 11:49:06,292 - INFO - [pico   109834ms] INFO  align  2: cursor was 6 (unaligned), ptr=20000416, ptr%2=0 -> ALIGNED ok | 0 us
+2026-08-20 11:49:06,596 - INFO - [pico   110139ms] INFO  align  4: cursor was 11 (unaligned), ptr=2000041C, ptr%4=0 -> ALIGNED ok | 0 us
+2026-08-20 11:49:06,905 - INFO - [pico   110444ms] INFO  align  8: cursor was 17 (unaligned), ptr=20000428, ptr%8=0 -> ALIGNED ok | 0 us
+2026-08-20 11:49:07,208 - INFO - [pico   110749ms] INFO  align 16: cursor was 29 (unaligned), ptr=20000430, ptr%16=0 -> ALIGNED ok | 0 us
+2026-08-20 11:49:07,517 - INFO - [pico   111054ms] INFO  alignof-driven: allocObject<uint64_t> ptr=20000438, alignof=8, ptr%8=0, value=0x1122334455667788 -> ALIGNED ok
+2026-08-20 11:49:07,805 - INFO - [pico   111361ms] INFO  alignment check: ALL PASSED
+2026-08-20 11:49:09,516 - INFO - [pico   113062ms] INFO  Alloc 512 bytes | used=512 free=3584 high=2824 cap=4096 | 1 us
+2026-08-20 11:49:11,224 - INFO - [pico   114765ms] INFO  allocArray<uint32_t>(64) ok ptr=20000710 last=3969 | used=768 free=3328 high=2824 cap=4096 | 5 us
+2026-08-20 11:49:12,930 - INFO - [pico   116472ms] INFO  allocObject<Point>{7,42} ok ptr=20000810 x=7 y=42 | used=776 free=3320 high=2824 cap=4096 | 1 us
+2026-08-20 11:49:14,637 - INFO - [pico   118178ms] INFO  Alloc 1024 bytes | used=1800 free=2296 high=2824 cap=4096 | 1 us
+2026-08-20 11:49:16,340 - INFO - [pico   119882ms] INFO  Alloc 1024 bytes | used=2824 free=1272 high=2824 cap=4096 | 1 us
+2026-08-20 11:49:18,043 - ERROR - [pico   121585ms] ERROR Alloc 1536 bytes FAILED - exhausted | used=2824 free=1272 high=2824 cap=4096 | 1 us
+2026-08-20 11:49:19,649 - INFO - [pico   123190ms] INFO  Rewind to mark | used=776 free=3320 high=2824 cap=4096 | 9 us
+2026-08-20 11:49:21,653 - INFO - [pico   125194ms] INFO  Alloc 1536 bytes after rewind | used=2312 free=1784 high=2824 cap=4096 | 1 us
+2026-08-20 11:49:23,356 - INFO - [pico   126898ms] INFO  Allocator reset | used=0 free=4096 high=2824 cap=4096 | 18 us
+2026-08-20 11:49:25,560 - WARNING - [pico   129102ms] WARN  Pointer invalidation: wrote 0x42 before reset, read 0xDD after reset
+2026-08-20 11:49:26,564 - WARNING - [pico   130106ms] WARN  Rewind to stale mark rejected (expected) | used=0 free=4096 high=2824 cap=4096 | 1 us
